@@ -2,23 +2,32 @@
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+.container {
+    display: flex;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+.color {
+    order: 1;
+    width: 10%;
+    padding: 25% 80px 25% 80px;
 }
 
-.App-intro {
-  font-size: large;
+.color > input {
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+input.add {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    border: none;
+    font-size: 3em;
+    background-color: #bbb;
+    border-radius: 0;
 }
+
+input.add:hover {
+    cursor: pointer;
+}
+
